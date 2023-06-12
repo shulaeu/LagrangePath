@@ -9,7 +9,7 @@ public class LagrangeCalc
     public LagrangeCalc(List<Vector2> newCoords, float x)
     {
         var result = functionCalc(newCoords[0], newCoords[1], newCoords[2], newCoords[3], x);
-        Debug.Log(result);
+        //Debug.Log(result1);
     }
 
     public void DeletePath()
@@ -34,6 +34,7 @@ public class LagrangeCalc
         float val4 = (x - x1) * (x - x2) * (x - x3) / (y4 - x1) * (y4 - x2) * (y4 - x3);
 
         return y1 * val1 + y2 * val2 + y3 * val3 + y4 * val4;
+        //Debug.Log(result2);
     }
 
 }
